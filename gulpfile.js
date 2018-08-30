@@ -28,11 +28,12 @@ gulp.task('browser-sync', function() {      // Создаем таск browser-s
 
 gulp.task('scripts', function() {
 return gulp.src([                           // Берем все необходимые библиотеки
-	'app/libs/jquery.min.js'	,               
-	'app/libs/bootstrap.min.js'	,
-	'app/libs/wow.js'			,
-	'app/libs/slick.min.js'		,
-	'app/my.js'					,
+	'app/js/libs/jquery.min.js'	,               
+	'app/js/libs/bootstrap.min.js'	,
+	'app/js/libs/wow.js'			,
+	'app/js/libs/slick.min.js'		,
+	'app/js/libs/my.js'				,
+	'app/js/libs/slow_scroll.js'	,
 		])
 		.pipe(concat('all.min.js'))   // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify())                     // Сжимаем JS файл

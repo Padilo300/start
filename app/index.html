@@ -10,16 +10,45 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <section class="container-fluid">
+    <section class="container-fluid" id="counts">
         <div class="row">
             <div class="col col-xs-12">
                 <h1 class="text-center">hellow world</h1>
+                <figure class="figureFact">
+                    <p>
+                        <span  class=" benefits__number ">
+                            20
+                        </span>
+                        <br>
+                        Лет на рынке
+                    </p>
+                    <figcaption>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate perferendis magni minus culpa, odit maiores atque facilis modi ratione adipisci recusandae quae tempora id expedita et! Maiores, esse ut.
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>
-    <script src="/js/libs/jquery-3.3.1.min.js"></script>
-    <script src="/js/libs/bootstrap.min.js"></script>
-    <script src="/js/libs/slick.min.js"></script>
-    <script src="/js/libs/wow.js"></script>
+    <script src="/js/libs/jquery-3.3.1.min.js"   ></script>
+    <script src="/js/libs/bootstrap.min.js"     defer ></script>
+    <script src="/js/libs/numerator.js"         defer ></script>
+    <script src="/js/libs/slow_scroll.js"       defer ></script>
+    <script src="/js/libs/slick.min.js"         defer ></script>
+    <script src="/js/libs/wow.js"               defer ></script>
+    <script src="/js/my.js"                     defer ></script>
+    <script>
+        $(document).ready(function(){
+            new WOW().init();
+
+            $(function() {
+                // настройки скролла   
+                // Default
+                jQuery.scrollSpeed(120, 1000);
+
+                // Custom Easing
+                // jQuery.scrollSpeed(100, 800, 'easeOutCubic');
+            });
+	    });
+    </script>
 </body>
 </html>
