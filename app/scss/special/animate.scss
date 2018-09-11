@@ -12,3 +12,20 @@
         animation-direction: alternate;
     }
 }
+.brightness{
+    &:hover{
+        filter: brightness(1.1);
+    }
+    
+}
+.contrast{
+    &:hover{
+        filter: contrast(1.2);
+    }
+}
+
+.hue-rotate{
+    &:hover{
+        filter: hue-rotate(181deg);
+    }
+}

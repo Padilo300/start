@@ -5332,10 +5332,16 @@ a.buy[data-buy="true"] {
     color: #fff; }
 
 .productCart {
-  margin: 25px 0; }
+  margin: 25px 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
   .productCart img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
   .productCart .name {
     text-align: center;
     font-size: 1.2em;
@@ -5562,10 +5568,22 @@ input:focus:-ms-input-placeholder {
 .gele:hover {
   -webkit-animation: gele 0.4s ease-in-out;
           animation: gele 0.4s ease-in-out;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
   -webkit-animation-direction: alternate;
           animation-direction: alternate; }
+
+.brightness:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1); }
+
+.contrast:hover {
+  -webkit-filter: contrast(1.2);
+          filter: contrast(1.2); }
+
+.hue-rotate:hover {
+  -webkit-filter: hue-rotate(181deg);
+          filter: hue-rotate(181deg); }
 
 #header {
   background-color: #222b38;
@@ -6055,6 +6073,9 @@ input:focus:-ms-input-placeholder {
 .slick-slide {
   float: left;
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-height: 1px;
   display: none; }
   [dir="rtl"] .slick-slide {
@@ -6132,7 +6153,8 @@ input:focus:-ms-input-placeholder {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  font-weight: 100; }
 
 .footer-distributed .footer-right {
   float: right;
