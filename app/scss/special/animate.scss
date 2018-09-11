@@ -1,0 +1,14 @@
+@keyframes gele {
+    from { transform: skewY(0);}
+    30%  { transform: skewY(10deg);}
+    30%  { transform: skewY(-10deg);}
+    to   { transform: skewY(0deg);}
+}
+
+.gele{
+    &:hover{
+        animation: gele 0.4s ease-in-out ;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+    }
+}

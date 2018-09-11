@@ -1,0 +1,17 @@
+.productCart{
+    margin: 25px 0;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    .name{
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 100;
+        
+    }
+    .infoBar{
+        display: flex;
+        justify-content: space-around;
+    }
+}

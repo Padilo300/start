@@ -4,6 +4,8 @@ body::-webkit-scrollbar {
  
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px 2px rgba(0,0,0,0.3); /*цвет*/
+    z-index: 1000;
+    animation: shadow 4s ease alternate infinite;
     background:none; /*фон у вас не будет фоновой цвета потому что он на none изменяем его на любой цветом*/
         opacity:.7;
 }
