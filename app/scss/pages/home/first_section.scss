@@ -1,0 +1,161 @@
+.section-1{
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    background: url('../img/Path.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+
+
+    @media screen and (max-width: 768px){
+        height: 165vh;
+        background-size: 96%;
+        background-repeat: no-repeat;
+        background-position: 100% 61%;
+
+        .mainTitle2{
+            font-size: 4em;
+            color: #fff;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            margin: 40px auto;
+            text-align: left;
+            width: max-content;
+            @media screen and (max-width: 455px){
+                font-size: 1.9em;
+            }
+        }
+    }
+
+    @media screen and (max-width: 455px){
+        padding: 10px;    
+        height: 122vh;
+    }
+
+    .mainTitle{
+        position: absolute;
+        top: 27%;
+        left: 30px;
+        font-size: 5em;
+        color: #fff;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+        @media screen and (max-width: 768px){
+            display: none;
+            position: static;
+            top: 27%;
+            left: 30px;
+            font-size: 4em;
+            color: #fff;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            text-align: left;
+            width: max-content;
+            margin: 50px auto;
+        }
+    }
+  
+    .logo{
+        display: block;
+        max-width: 600px;
+        margin: 30px;
+        position: absolute;
+        @media screen and (max-width: 768px){
+            margin: 10px auto;
+            position: static;
+        }
+        img{
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.01);
+            } 
+        }
+    }
+  
+    .footer{
+        position: absolute;
+        bottom: 0;
+        background: #000;
+        left: 0;
+        height: 100px;
+        width: 69%;
+        overflow: hidden;
+        @media screen and (max-width: 768px){
+            position: absolute;
+            bottom: -438px;
+            background: #000;
+            left: 0;
+            height: 124px;
+            width: 100%;
+        }
+        @media screen and (max-width: 455px){
+            position: absolute;
+            bottom: -94px;
+            background: #000;
+            left: -5px;
+            height: 124px;
+            width: 104%;
+        }
+        @media screen and (max-width: 415px){
+            height: 124px;
+            bottom: -92px;
+            left: auto;
+            right: 0;
+            width: 100%;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            background: #f5000d;
+            left: -22px;
+            top: -22px;
+            width: 30px;
+            height: 150px;
+            transform: rotate(24deg);
+        }
+        p{
+            padding: 25px 10px 10px 50px;
+            font-size: 7px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.17px;
+            color: #fff;
+        }
+    }
+    .cola{
+        object-fit: cover;
+        max-width: 650px;
+        position: absolute;
+        right: 19%;
+        top: 1%;
+        transition: all 0.3s;
+        animation: move 5s infinite linear;
+        
+        @media screen and (max-width: 768px){
+            max-width: 50%;
+            position: absolute;
+            right: 42%;
+            top: 59%;
+        }
+        @media screen and (max-width: 455px){
+            right: 44%;
+            top: 48%;
+        }
+        @keyframes move {
+            40% {
+            transform: rotate(-5deg);
+              animation-timing-function: ease-in;
+              }
+            80% {
+                transform: rotate(5deg);
+              }
+          }
+    }
+}
+

@@ -3,7 +3,7 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // переменные
 @import "variable/variable"   ; 
@@ -47,7 +47,7 @@
 
 
 body{
-    background: #fff;
+    background: #f5000d;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
