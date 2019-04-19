@@ -12765,16 +12765,20 @@ input:focus:-ms-input-placeholder {
   max-width: 1920px;
   height: 100vh;
   margin: 0 auto;
-  background: url("../img/Path.png");
+  background: url("../img/Path_Guide.png");
   -webkit-background-size: contain;
           background-size: contain;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right top;
   position: relative; }
   .section-1 .mainTitle2 {
     display: none; }
   .section-1 .m {
     background: url("../img/Path.png"); }
+  @media screen and (max-width: 1499px) {
+    .section-1 {
+      -webkit-background-size: cover;
+              background-size: cover; } }
   @media screen and (max-width: 1199px) {
     .section-1 {
       height: 75vh; } }
@@ -12784,7 +12788,11 @@ input:focus:-ms-input-placeholder {
   @media screen and (max-width: 768px) {
     .section-1 {
       height: 100vh;
-      background: url("../img/page_1_m.png"); }
+      background: url("../img/page_1_m.png");
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-repeat: no-repeat;
+      height: 133vh; }
       .section-1 .mainTitle2 {
         display: block;
         font-size: 4em;
@@ -12820,6 +12828,9 @@ input:focus:-ms-input-placeholder {
     font-weight: 900;
     line-height: 1;
     text-transform: uppercase; }
+    @media screen and (max-width: 1499px) {
+      .section-1 .mainTitle {
+        font-size: 4em; } }
     @media screen and (max-width: 1341px) {
       .section-1 .mainTitle {
         top: 35%; } }
@@ -12854,6 +12865,9 @@ input:focus:-ms-input-placeholder {
     max-width: 600px;
     margin: 30px;
     position: absolute; }
+    @media screen and (max-width: 1499px) {
+      .section-1 .logo {
+        max-width: 500px; } }
     @media screen and (max-width: 1199px) {
       .section-1 .logo {
         max-width: 500px; } }
@@ -12891,6 +12905,9 @@ input:focus:-ms-input-placeholder {
     height: 100px;
     width: 70%;
     overflow: hidden; }
+    @media screen and (max-width: 1442px) {
+      .section-1 .footer {
+        width: 65%; } }
     @media screen and (max-width: 1396px) {
       .section-1 .footer {
         width: 61%; } }
